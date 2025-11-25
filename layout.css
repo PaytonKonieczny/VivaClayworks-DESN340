@@ -1,0 +1,54 @@
+
+
+
+/* Container */
+.container {
+	display:block;
+	width: 88%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+
+.container-full {
+	width: 100%;
+}
+
+
+/* Rows */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	margin: 0 -20px;
+}
+
+.row-justify-end {
+	justify-content: flex-end;
+}
+
+.row-justify-center {
+	justify-content: center;
+}
+
+.row-justify-between {
+	justify-content: space-between;
+}
+
+.row-align-end {
+	align-items: flex-end;
+}
+
+.row-align-center {
+	align-items: center;
+}
+
+/* Columns */
+
+.col {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
