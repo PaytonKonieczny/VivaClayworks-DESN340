@@ -355,9 +355,7 @@ li {
 	.cta-wrap {
 		display: none;
 	}
-	.hamburger {
-		display: flex;
-	}
+	
 /* TYPOGRAPHY */
 	h1 {
 		font-size: 58px; 
@@ -387,7 +385,7 @@ li {
 	.hamburger {
 	width: 30px;
 	height: 20px;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }

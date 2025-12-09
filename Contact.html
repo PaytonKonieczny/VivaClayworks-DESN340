@@ -41,6 +41,12 @@
 				</nav>
 			</div>
 
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
 		</div>
 
 	</header>
@@ -80,7 +86,7 @@
 
 
 				<div class="row"> <!-- Row 2 Start -->
-					<div class="col"> <!-- Col 2 Start -->
+					<div class="col col-lg-12"> <!-- Col 2 Start -->
 
 						<form class="newsletter-form">
 
@@ -125,19 +131,19 @@
 
 
 				<div class="row"> <!-- Row 1 Start -->
-					<div class="col col-lg-10">
+					<div class="col col-lg-10 col-sm-12">
 					<img src="images/map_image.png" class="map-image" alt="map location"> <!-- Map Image -->
 					</div>
 				</div> <!-- Row 1 End -->
 
 
 				<div class="row"> <!-- Row 2 Start -->
-					<div class="col col-lg-8"> <!-- Column 1 Start -->
+					<div class="col col-lg-8 col-sm-12"> <!-- Column 1 Start -->
 						<h3>Location</h3>
 						<p>10125 81 Ave NW, Edmonton, AB T6E 1W9</p>
 					</div> <!-- Column 1 End -->
 
-					<div class="col col-lg-4"> <!-- Column 2 Start -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start -->
 						<h3>Hours</h3>
 						<p>Monday: 11am - 7pm </p>
 						<p>Tuesday: 11am - 7pm</p>
@@ -157,29 +163,44 @@
 	</main>
 
 	<!-- Footer Section -->
-	<footer style="background-color: #C1B8B9;">
+	<footer style="background-color: #C1B8B9;" class="section-padding">
 		<div class="container"> <!-- Container Start -->
 
-			<div class="col"> <!-- Column 1 Start -->
-					<a href="index.html">Viva Clayworks</a>
-					<img src="images/White_Instagram_Icon.svg" class="card-icon"> <!-- Instagram Logo -->
-					<img src="images/White_Facebook_Icon.svg" class="card-icon"> <!-- Facebook Logo -->
+			<div class="row row-justify-between"> <!-- Row 1 Start -->
+
+				<div class="col col-lg-5 col-sm-12"> <!-- Column 1 Start -->
+						<a href="index.html" class="logo-text">Viva Clayworks</a>
+						<div class="footer-icon-wrap"> <!-- Icon Wrapper Start -->
+							<img src="images/White_Instagram_Icon.svg" class="footer-icon"> <!-- Instagram Logo -->
+							<img src="images/White_Facebook_Icon.svg" class="footer-icon"> <!-- Facebook Logo -->
+						</div> <!-- Icon Wrapper End -->
+				</div> <!-- Columnn 1 End -->
+
+
+
+				<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start -->
+					<div class="footer-card"> <!-- Card Start -->
+						<h3 style="margin-bottom: 16px;">Newsletter</h3>
+						<div class="form-group"> <!-- Email Input -->
+							<input type="email" name="email" placeholder="Type your email..." class="input-field">
+						</div>
+						<a class="button-small">Sign Up</a> <!-- Sign Up Button -->
+					</div> <!-- Card End -->
+				</div> <!-- Column 2 End -->
+
+
+			</div> <!-- Row 1 End -->
+
+
+
+			<div class="row"> <!-- Row 2 Start -->
+				<div class="col col-lg-12"> <!-- Col 3 Start -->
 					<div class="footer-meta"> <!-- Meta Start -->
-						<p class="text-black">© 2025 Viva Clayworks   <a href="#" class="text-black">Privacy Policy</a>   <a href="#" class="text-black">Terms</a></p>
-					</div> <!-- Meta End -->
-			</div> <!-- Columnn 1 End -->
+								<p class="text-black">© 2025 Viva Clayworks <a href="#" class="text-black">Privacy Policy</a> <a href="#" class="text-black">Terms</a></p>
+							</div> <!-- Meta End -->
+				</div> <!-- Col 3 End -->
 
-
-
-			<div class="col"> <!-- Column 2 Start -->
-				<h3>Newsletter</h3>
-				<div class="form-group"> <!-- Email Input -->
-					<label for="email" class="input-label">Email</label>
-					<input type="email" name="email" placeholder="Type your email..." class="input-field">
-				</div>
-				<a class="button-small">Sign Up</a> <!-- Sign Up Button -->
-
-			</div> <!-- Column 2 End -->
+			</div> <!-- Row 2 End -->
 
 		</div> <!-- Container End -->
 
