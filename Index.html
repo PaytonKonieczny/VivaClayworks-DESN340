@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Fonts -->
-	<link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
@@ -26,19 +28,24 @@
 
 			<!-- Logo -->
 			<div>
-				<a href="index.html">Viva Clayworks</a>
-				<h1></h1><!-- DELETE ME -->
+				<a href="index.html" class="logo-text">Viva Clayworks</a>
 			</div>
 
 			<!-- Navigation -->
 			<div class="menu">
 				<nav>
 					<ul>
-						<li><a href="Shop.html" class="nav-link">Shop</a></li>
-						<li><a href="About.html" class="nav-link">About</a></li>
-						<li><a href="Contact.html" class="nav-link">Contact</a></li>
+						<li><a href="Shop.html" class="nav-link nav-text">Shop</a></li>
+						<li><a href="About.html" class="nav-link nav-text">About</a></li>
+						<li><a href="Contact.html" class="nav-link nav-text">Contact</a></li>
 					</ul>
 				</nav>
+			</div>
+
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 
 		</div>
@@ -51,23 +58,25 @@
 
 
 		<!-- Hero Section -->
-<section class="background-white">
+<section class="background-white section-padding">
 
 	<div class="container"> <!-- Container -->
 
 
-		<div class="row"> <!-- Row -->
+		<div class="row row-align-center"> <!-- Row -->
 
-			<div class="col"> <!-- Column -->
-				<h2>Let's Get Creative!</h2>
-				<p>Welcome to Viva Clayworks! 
+			<div class="col col-lg-6 col-sm-12"> <!-- Column -->
+				<div class="button-center">
+				<h2 class="text-center">Let's Get Creative!</h2>
+				<p class="text-center plarge">Welcome to Viva Clayworks! 
 				A creative pottery studio where community and clay come together!</p>
-				<a href="#">Learn More</a>
+				<a href="About.html" class="button-small">Learn More</a>
+				</div>
 			</div> <!-- Column End -->
 
-			<div class="col"> <!-- Column -->
-				<div class=""> <!-- Image "Frame" -->
-					<img src="images/VivaClay_Index_Hero.jpg">
+			<div class="col col-lg-6 col-sm-12"> <!-- Column -->
+				<div class="hero-image"> <!-- Image "Frame" -->
+					<img src="images/VivaClay_Index_Hero.jpg" alt="A stock image of a woman's hands at a pottery wheel, her hands are covered in clay" class="hero-image-crop">
 
 			</div> <!-- Column End -->
 
@@ -79,27 +88,27 @@
 
 
 <!-- 3 Square Section -->
-		<section class="background-brown-dark">
+		<section class="background-brown-dark section-padding">
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row">
+				<div class="row row-align-center">
 
-					<div class="col"> <!-- Column 1 -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 1 -->
 						<div class="card"> <!-- Card 1 -->
-							<img src="images/index_pottery_class.png"> <!-- Picture 1 Image -->
-							<h3w> Create </h3w>
-							<a class="button-small"> Book Now</a>
+							<img src="images/index_pottery_class.png" alt="two people at a pottery studio" >
+							<h3 class="h3w text-center"> Create </h3>
+							<a class="button-small">Book Now</a>
 						</div> <!-- Card 1 End -->
 
 					</div> <!-- Column 1 End -->
 
 
 
-					<div class="col"> <!-- Column 2 -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 2 -->
 						<div class="card"> <!-- Card 2 -->
-							<img src="images/index_shopping_image.png"> <!-- Picture 2 Image -->
-							<h3w> Shop </h3w>
+							<img src="images/index_shopping_image.png" alt="two pottery cups"> 
+							<h3 class="h3w text-center"> Shop </h3>
 							<a href="Shop.html" class="button-small">Shop Now</a>
 						</div> <!-- Card 2 End -->
 						
@@ -108,10 +117,10 @@
 
 
 
-					<div class="col"> <!-- Column 3 -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 3 -->
 						<div class="card"> <!-- Card 3 -->
-							<img src="images/index_store_image.png"> <!-- Picture 3 Image -->
-							<h3w> About </h3w>
+							<img src="images/index_store_image.png" alt="picture of the inside of the building"> 
+							<h3 class="h3w text-center"> About </h3>
 							<a href="About.html" class="button-small">Learn More</a>
 						</div> <!-- Card 3 End -->
 						
@@ -129,28 +138,32 @@
 
 
 <!-- Visit Us Section -->
-		<section class="background-white">
+		<section class="background-white section-padding">
 
 			<div class="container"> <!-- Container -->
 
 				<div class="row"> <!-- Row 1 Start -->
+					<div class="col">
 					<h2>Visit us</h2>
+					</div>
 				</div> <!-- Row 1 End -->
 
 
 				<div class="row"> <!-- Row 2 Start -->
-					<img src="images/map_image.png"> <!-- Map Image -->
+					<div class="col col-lg-10 col-sm-12">
+					<img src="images/map_image.png" class="map-image" alt="map location"> <!-- Map Image -->
+					</div>
 				</div> <!-- Row 2 End -->
 
 
 				<div class="row"> <!-- Row 3 Start -->
-					<div class="col"> <!-- Column 1 Start -->
+					<div class="col col-lg-8 col-sm-12"> <!-- Column 1 Start -->
 						<h3>Location</h3>
 						<p>10125 81 Ave NW, Edmonton, AB T6E 1W9</p>
 						<a href="Contact.html" class="button-small">Contact Us</a>
 					</div> <!-- Column 1 End -->
 
-					<div class="col"> <!-- Column 2 Start -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start -->
 						<h3>Hours</h3>
 						<p>Monday: 11am - 7pm </p>
 						<p>Tuesday: 11am - 7pm</p>
@@ -171,29 +184,44 @@
 
 
 <!-- Footer Section -->
-	<footer style="background-color: #C1B8B9;">
+	<footer style="background-color: #C1B8B9;" class="section-padding">
 		<div class="container"> <!-- Container Start -->
 
-			<div class="col"> <!-- Column 1 Start -->
-					<a href="index.html">Viva Clayworks</a>
-					<img src="images/White_Instagram_Icon.svg" class="card-icon"> <!-- Instagram Logo -->
-					<img src="images/White_Facebook_Icon.svg" class="card-icon"> <!-- Facebook Logo -->
+			<div class="row row-justify-between"> <!-- Row 1 Start -->
+
+				<div class="col col-lg-5 col-sm-12"> <!-- Column 1 Start -->
+						<a href="index.html" class="logo-text">Viva Clayworks</a>
+						<div class="footer-icon-wrap"> <!-- Icon Wrapper Start -->
+							<img src="images/White_Instagram_Icon.svg" class="footer-icon"> <!-- Instagram Logo -->
+							<img src="images/White_Facebook_Icon.svg" class="footer-icon"> <!-- Facebook Logo -->
+						</div> <!-- Icon Wrapper End -->
+				</div> <!-- Columnn 1 End -->
+
+
+
+				<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start -->
+					<div class="footer-card"> <!-- Card Start -->
+						<h3 style="margin-bottom: 16px;">Newsletter</h3>
+						<div class="form-group"> <!-- Email Input -->
+							<input type="email" name="email" placeholder="Type your email..." class="input-field">
+						</div>
+						<a class="button-small">Sign Up</a> <!-- Sign Up Button -->
+					</div> <!-- Card End -->
+				</div> <!-- Column 2 End -->
+
+
+			</div> <!-- Row 1 End -->
+
+
+
+			<div class="row"> <!-- Row 2 Start -->
+				<div class="col col-lg-12"> <!-- Col 3 Start -->
 					<div class="footer-meta"> <!-- Meta Start -->
-						<p class="text-black">© 2025 Viva Clayworks   <a href="#" class="text-black">Privacy Policy</a>   <a href="#" class="text-black">Terms</a></p>
-					</div> <!-- Meta End -->
-			</div> <!-- Columnn 1 End -->
+								<p class="text-black">© 2025 Viva Clayworks <a href="#" class="text-black">Privacy Policy</a> <a href="#" class="text-black">Terms</a></p>
+							</div> <!-- Meta End -->
+				</div> <!-- Col 3 End -->
 
-
-
-			<div class="col"> <!-- Column 2 Start -->
-				<h3>Newsletter</h3>
-				<div class="form-group"> <!-- Email Input -->
-					<label for="email" class="input-label">Email</label>
-					<input type="email" name="email" placeholder="Type your email..." class="input-field">
-				</div>
-				<a class="button-small">Sign Up</a> <!-- Sign Up Button -->
-
-			</div> <!-- Column 2 End -->
+			</div> <!-- Row 2 End -->
 
 		</div> <!-- Container End -->
 

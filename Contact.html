@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Fonts -->
-	<link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
@@ -25,16 +27,16 @@
 
 			<!-- Logo -->
 			<div>
-				<a href="index.html">Viva Clayworks</a>
+				<a href="index.html" class="logo-text">Viva Clayworks</a>
 			</div>
 
 			<!-- Navigation -->
 			<div class="menu">
 				<nav>
 					<ul>
-						<li><a href="Shop.html" class="nav-link">Shop</a></li>
-						<li><a href="About.html" class="nav-link">About</a></li>
-						<li><a href="Contact.html" class="nav-link">Contact</a></li>
+						<li><a href="Shop.html" class="nav-link nav-text">Shop</a></li>
+						<li><a href="About.html" class="nav-link nav-text">About</a></li>
+						<li><a href="Contact.html" class="nav-link nav-text">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -51,11 +53,11 @@
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row Start -->
+				<div class="row row-justify-center"> <!-- Row Start -->
 
-					<div class="col"> <!-- Column Start -->
+					<div class="col col-lg-5 col-sm-12"> <!-- Column Start -->
 
-						<h1>Contact Us</h1>
+						<h1 class="text-center">Contact Us</h1>
 
 					</div> <!-- Column End -->
 
@@ -70,9 +72,9 @@
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row 1 Start -->
-					<div class="col"> <!-- Col 1 Start -->
-					<h2> We'd love to hear from you </h2>
+				<div class="row row-justify-center"> <!-- Row 1 Start -->
+					<div class="col col-lg-8 col-sm-12"> <!-- Col 1 Start -->
+					<h2 class="text-center"> We'd love to hear from you!</h2>
 					</div> <!-- Col 1 End -->
 				</div> <!-- Row 1 End -->
 
@@ -117,22 +119,25 @@
 
 
 		<!-- Map Section -->
-		<section>
+		<section class="background-white section-padding">
 
 			<div class="container"> <!-- Container -->
 
+
 				<div class="row"> <!-- Row 1 Start -->
-					<img src="images/map_image.png"> <!-- Map Image -->
+					<div class="col col-lg-10">
+					<img src="images/map_image.png" class="map-image" alt="map location"> <!-- Map Image -->
+					</div>
 				</div> <!-- Row 1 End -->
 
 
 				<div class="row"> <!-- Row 2 Start -->
-					<div class="col"> <!-- Column 1 Start -->
+					<div class="col col-lg-8"> <!-- Column 1 Start -->
 						<h3>Location</h3>
 						<p>10125 81 Ave NW, Edmonton, AB T6E 1W9</p>
 					</div> <!-- Column 1 End -->
 
-					<div class="col"> <!-- Column 2 Start -->
+					<div class="col col-lg-4"> <!-- Column 2 Start -->
 						<h3>Hours</h3>
 						<p>Monday: 11am - 7pm </p>
 						<p>Tuesday: 11am - 7pm</p>

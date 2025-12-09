@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Fonts -->
-	<link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
@@ -24,16 +26,16 @@
 
 			<!-- Logo -->
 			<div>
-				<a href="index.html">Viva Clayworks</a>
+				<a href="index.html" class="logo-text">Viva Clayworks</a>
 			</div>
 
 			<!-- Navigation -->
 			<div class="menu">
 				<nav>
 					<ul>
-						<li><a href="Shop.html" class="nav-link">Shop</a></li>
-						<li><a href="About.html" class="nav-link">About</a></li>
-						<li><a href="Contact.html" class="nav-link">Contact</a></li>
+						<li><a href="Shop.html" class="nav-link nav-text">Shop</a></li>
+						<li><a href="About.html" class="nav-link nav-text">About</a></li>
+						<li><a href="Contact.html" class="nav-link nav-text">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -47,15 +49,15 @@
 
 
 		<!-- Hero Section -->
-		<section class="background-white">
+		<section class="background-white section-padding">
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row Start -->
+				<div class="row row-align-center"> <!-- Row Start -->
 
-					<div class="col"> <!-- Column Start -->
+					<div class="col col-large-8"> <!-- Column Start -->
 
-						<h1>Ceramic Products</h1>
+						<h1 class="text-center">Ceramic Products</h1>
 
 					</div> <!-- Column End -->
 
@@ -67,59 +69,71 @@
 
 
 		<!-- Shop Section -->
-		<section>
+		<section class="section-padding">
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row 1 Start -->
+				<div class="row row-align-center"> <!-- Row 1 Start -->
 
-					<div class="col"> <!-- Column 1 Start -->
-						<img src="images/HM_shortvase_image.png">
-						<h3>Holly McKeen Short Vase</h3>
-						<psmall>$125.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+					<div class="col col-lg-6"> <!-- Column 1 Start -->
+						<div class="card"> <!-- Card 1 -->
+							<img src="images/HM_shortvase_image.png" alt="picture of a short ceramic vase">
+							<h3 class="text-center">Holly McKeen Short Vase</h3>
+							<p class="psmall text-center">$125.00 CAD</p>
+							<a class="button-small"> Buy Now</a>
+						</div> <!-- Card 1 End -->
 					</div> <!-- Col 1 End -->
 
-					<div class="col"> <!-- Column 2 Start -->
-						<img src="images/HM_tumbler_image.png">
-						<h3>Holly McKeen Tumbler</h3>
-						<psmall>$65.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+					<div class="col col-lg-6"> <!-- Column 2 Start -->
+						<div class="card"> <!-- Card 2 -->
+							<img src="images/HM_tumbler_image.png" alt="picture of ceramic tumbler">
+							<h3 class="text-center">Holly McKeen Tumbler</h3>
+							<p class="psmall text-center">$65.00 CAD</p>
+							<a class="button-small">Buy Now</a>
+						</div> <!-- Card 2 End -->
 					</div> <!-- Col 2 End -->
 				</div> <!-- Row 1 End -->
 
 
 
-				<div class="row"> <!-- Row 2 Start -->
-					<div class="col"> <!-- Col 3 Start -->
-						<img src="images/HM_vase_image.png">
-						<h3>Holly McKeen Vase</h3>
-						<psmall>$180.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+				<div class="row row-align-center"> <!-- Row 2 Start -->
+					<div class="col col-lg-6"> <!-- Col 3 Start -->
+						<div class="card"> <!-- Card 3 -->
+							<img src="images/HM_vase_image.png" alt="picture of ceramic tall vase">
+							<h3 class="text-center">Holly McKeen Vase</h3>
+							<p class="psmall text-center">$180.00 CAD</p>
+							<a class="button-small">Buy Now</a>
+						</div> <!-- Card 3 End -->
 					</div> <!-- Col 3 End -->
 
-					<div class="col"> <!-- Col 4 Start -->
-						<img src="images/HM_vase_image.png">
-						<h3>Holly McKeen Plate</h3>
-						<psmall>$80.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+					<div class="col col-lg-6"> <!-- Col 4 Start -->
+						<div class="card"> <!-- Card 4 -->
+							<img src="images/HM_plate_image.png" alt="picture of a ceramic plate">
+							<h3 class="text-center">Holly McKeen Plate</h3>
+							<p class="psmall text-center">$80.00 CAD</p>
+							<a class="button-small">Buy Now</a>
+						</div> <!-- Card 4 End -->
 					</div> <!-- Col 4 End -->
 				</div> <!-- Row 2 End -->
 
 
 
-				<div class="row"> <!-- Row 3 Start -->
-					<div class="col"> <!-- Col 5 Start -->
-						<img src="images/HoldThis_collection_image.png">
-						<h3>Hold This Collection</h3>
-						<psmall>$56.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+				<div class="row row-align-center"> <!-- Row 3 Start -->
+					<div class="col col-lg-6"> <!-- Col 5 Start -->
+						<div class="card"> <!-- Card 5 -->
+							<img src="images/HoldThis_collection_image.png" alt="picture of two ceramic cups in a collection">
+							<h3 class="text-center">Hold This Collection</h3>
+							<p class="psmall text-center">$56.00 CAD</p>
+							<a class="button-small">Buy Now</a>
+						</div> <!-- Card 5 End -->
 					</div> <!-- Col 5 End -->
 
-					<div class="col"> <!-- Col 6 Start -->
-						<img src="images/HoldThis_vase_image.png">
-						<h3>Hold This Vase</h3>
-						<psmall>$58.00 CAD</psmall>
-						<a class="button-small">Buy Now</a>
+					<div class="col col-lg-6"> <!-- Col 6 Start -->
+						<div class="card"> <!-- Card 6 -->
+							<img src="images/HoldThis_vase_image.png" alt="picture of medium ceramic vase">
+							<h3 class="text-center">Hold This Vase</h3>
+							<p class="psmall text-center">$58.00 CAD</p>
+							<a class="button-small">Buy Now</a>
+						</div> <!-- Card 6 End -->
 					</div> <!-- Col 6 End -->
 				</div> <!-- Row 3 End -->
 
@@ -129,22 +143,24 @@
 
 
 		<!-- Little Otter Section -->
-		<section class="background-brown-medium">
+		<section class="background-brown-medium section-padding">
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row -->
+				<div class="row row-align-center"> <!-- Row -->
 
-					<div class="col"> <!-- Column 1 Start -->
-						<h2w>Little Otter</h2w>
-						<p>Written by KJ MacAlister</p>
-						<p>$20.00 CAD</p>
+					<div class="col col-lg-5"> <!-- Column 1 Start -->
+						<div class="button-center">
+						<h2 class="h2w text-center">Little Otter</h2>
+						<p class="text-center">Written by KJ MacAlister</p>
+						<p class="text-center">$20.00 CAD</p>
 						<a class="button-small">Buy Now</a>
+						</div>
 					</div> <!-- Column 1 End -->
 
-					<div class="col"> <!-- Column 2 Start -->
-						<div class=""> <!-- Image "Frame" -->
-							<img src="images/little_otter.png">
+					<div class="col col-lg-7"> <!-- Column 2 Start -->
+						<div class="hero-image"> <!-- Image "Frame" -->
+							<img src="images/little_otter.png" alt="cover of the Little Otter storybook">
 
 					</div> <!-- Column 2 End -->
 

@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Fonts -->
-	<link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
@@ -26,16 +28,16 @@
 
 			<!-- Logo -->
 			<div>
-				<a href="index.html">Viva Clayworks</a>
+				<a href="index.html" class="logo-text">Viva Clayworks</a>
 			</div>
 
 			<!-- Navigation -->
 			<div class="menu">
 				<nav>
 					<ul>
-						<li><a href="Shop.html" class="nav-link">Shop</a></li>
-						<li><a href="About.html" class="nav-link">About</a></li>
-						<li><a href="Contact.html" class="nav-link">Contact</a></li>
+						<li><a href="Shop.html" class="nav-link nav-text">Shop</a></li>
+						<li><a href="About.html" class="nav-link nav-text">About</a></li>
+						<li><a href="Contact.html" class="nav-link nav-text">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -48,15 +50,15 @@
 	<main>
 
 		<!-- Hero Section -->
-		<section class="background-white">
+		<section class="background-white section-padding">
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row Start -->
+				<div class="row row-justify-center"> <!-- Row Start -->
 
-					<div class="col"> <!-- Column Start -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column Start -->
 
-						<h1>About Us</h1>
+						<h1 class="text-center">About Us</h1>
 
 					</div> <!-- Column End -->
 
@@ -67,18 +69,21 @@
 
 
 		<!-- Owner Section -->
-		<section class="background-brown-dark">
+		<section class="background-brown-dark section-padding">
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="col"> <!-- Column 1 Start -->
-					<img src="images/about_owner_image.png">
-				</div> <!-- Column 1 End -->
+				
 
-				<div class="row"> <!-- Row Start -->
-					<div class="col"> <!-- Column 2 Start -->
-						<h2w>Since 1995</h2w>
-						<pw>Since 1995, Viva Clayworks has been a creative home in Edmonton, offering pottery classes, workshops, and a warm community where people come together to connect, learn, and create with clay.</pw>
+				<div class="row row-align-center"> <!-- Row Start -->
+
+					<div class="col col-lg-6 col-sm-12"> <!-- Column 1 Start -->
+					<img src="images/about_owner_image.png" alt="picture of business owner"> 
+					</div> <!-- Column 1 End -->
+
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start -->
+						<h2 class="h2w text-center">Since 1995</h2>
+						<p class="pw text-center">Viva Clayworks has been a creative home in Edmonton, offering pottery classes, workshops, and a warm community where people come together to connect, learn, and create with clay.</p>
 
 					</div> <!-- Column 2 End -->
 
@@ -93,26 +98,26 @@
 		<section>
 	
 			<div class="container"><!-- Container -->
-				<div class="row"> <!-- Row -->
-					<div class="col"> <!-- Column -->
-					<h2 class="text-align-center">Made With Intention</h2>
+				<div class="row row-justify-center"> <!-- Row -->
+					<div class="col col-lg-6 col-sm-12"> <!-- Column -->
+					<h2 class="text-center">Made With Intention</h2>
 					</div> <!-- Column End -->
 				</div> <!-- Row End -->
 					
 
 
-					<div class="row"> <!-- Row  -->
-						<div class="col col-large-4 col-small-12"> <!-- Column 1 -->
+					<div class="row row-align-center"> <!-- Row  -->
+						<div class="col col-lg-4 col-sm-12"> <!-- Column 1 -->
 							<div class="card">  <!-- Card 1 -->
 								<img src="images/brain_light_icon.svg" class="card-icon">
-								<h3 class="text-align-center">Creativity</h3>
+								<h3 class="text-center">Creativity</h3>
 							</div> <!-- Card 1 End -->
 						</div> <!-- Column 1 End -->
 					
 
 
 					
-						<div class="col col-large-4 col-small-12"> <!-- Column 2 -->
+						<div class="col col-lg-4 col-sm-12"> <!-- Column 2 -->
 							<div class="card"> <!-- Card 2 -->
 								<img src="images/community_icon.svg" class="card-icon">
 								<h3>Community</h3>
@@ -122,7 +127,7 @@
 
 
 					
-						<div class="col col-large-4 col-small-12"> <!-- Column 3 -->
+						<div class="col col-lg-4 col-sm-12"> <!-- Column 3 -->
 							<div class="card"> <!-- Card 3 -->
 								<img src="images/pottery_icon.svg" class="card-icon">
 								<h3>Craftsmanship</h3>
@@ -141,25 +146,26 @@
 
 			<div class="container"> <!-- Container Start -->
 
-				<div class="row"> <!-- Row Start -->
-						<div class="col"> <!-- Column Start -->
-							<h2w>Sign Up, Stay Inspired</h2w>
-							<pw>Sign up for our newsletter to receive updates on new classes, upcoming events, and firing opportunities right in your inbox!</pw>
+				<div class="row row-justify-between"> <!-- Row Start -->
+						<div class="col col-lg-6 col-sm-12"> <!-- Column Start -->
+							<h2 class="h2w text-center">Sign Up, Stay Inspired</h2>
+							<p class="pw text-center">Sign up for our newsletter to receive updates on new classes, upcoming events, and firing opportunities right in your inbox!</p>
 						</div> <!-- Column End -->
 
+						<div class="col col-lg-4 col-sm-12"> <!-- Column Start -->
+							<form class="sign-up">
+										<div class="form-group">
+											
+											<input type="text" name="fullName" placeholder="Full Name" class="input-field">
+										</div>
 
-					<form class="newsletter-form">
-								<div class="form-group">
-									<label for="fullName" class="input-label">Full Name</label>
-									<input type="text" name="fullName" placeholder="Type your name..." class="input-field">
-								</div>
-
-								<div class="form-group">
-									<label for="email" class="input-label">Email Address</label>
-									<input type="email" name="email" placeholder="Type your email..." class="input-field">
-								</div>
-								<a class="button-small">Sign Up</a>
-					</form>
+										<div class="form-group">
+											
+											<input type="email" name="email" placeholder="Email" class="input-field">
+										</div>
+										<a class="button-small">Sign Up</a>
+							</form>
+						</div> <!-- Column End -->
 
 				</div> <!-- Row End -->
 			</div> <!-- Container End -->
@@ -171,27 +177,27 @@
 		<!-- Follow Us Section -->
 		<section>
 			<div class="container">	<!-- Container Start -->
-				<div class="row"> <!-- Row 1 Start -->
-					<div class="col"> <!-- Column 1 Start -->
-					<h2 class="text-align-center">Follow Us</h2>
+				<div class="row row-justify-center"> <!-- Row 1 Start -->
+					<div class="col col-lg-4 col-sm-12"> <!-- Column 1 Start -->
+					<h2 class="text-center">Follow Us</h2>
 					</div> <!-- Col 1 End -->
 				</div> <!-- Row 1 End -->
 					
 				
-				<div class="row"> <!-- Row 2 Start -->
+				<div class="row row-justify-center"> <!-- Row 2 Start -->
 
-						<div class="col col-large-4 col-small-12"> <!-- Column 2 Start-->
+						<div class="col col-lg-4 col-sm-12"> <!-- Column 2 Start-->
 							<div class="card">  <!-- Card 1 -->
 								<img src="images/Instagram_icon.svg" class="card-icon"> 
-								<h3 class="text-align-center">@vivaclayworks</h3><!-- NEED TO MAKE THIS NOT BOLD TEXT!!!!! -->
+								<h3 class="text-center">@vivaclayworks</h3>
 							</div> <!-- Card 1 End -->
 						</div> <!-- Column 2 End -->
 
 				
-						<div class="col col-large-4 col-small-12"> <!-- Column 3 Start-->
+						<div class="col col-lg-4 col-sm-12"> <!-- Column 3 Start-->
 							<div class="card">  <!-- Card 2 -->
 								<img src="images/Facebook_icon.svg" class="card-icon"> 
-								<h3 class="text-align-center">@vivaclayworks</h3><!-- NEED TO MAKE THIS NOT BOLD TEXT!!!!! -->
+								<h3 class="text-center">@vivaclayworks</h3>
 							</div> <!-- Card 2 End -->
 						</div> <!-- Column 3 End -->
 
@@ -202,7 +208,7 @@
 	</main>
 
 	<!-- Footer Section -->
-	<footer style="background-color: #C1B8B9;">
+	<footer style="background-color: #C1B8B9;" class="section-padding">
 		<div class="container"> <!-- Container Start -->
 
 			<div class="col"> <!-- Column 1 Start -->
